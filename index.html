@@ -196,7 +196,7 @@
         
       </div>
     </section>
-    <section id="Use Cases" class="h-[200rem] mt-20">
+    <section id="Use Cases" class="h-auto mt-20">
       <div id="ALL" class="mx-4">
         <div id="Top">
           <h2 class="text-green60 flex justify-center font-medium text-3xl mb-5">Use Cases</h2>
@@ -377,16 +377,109 @@
 
           </div>
         </div>
+      </div>
+    </section>
+
+
+    <section id="Our features" class="h-[200rem] mt-20">
+      <div id="OurFeaturesHeader" class="text-center mx-4">
+        <h2 class="text-white font-medium text-3xl mb-5">Our<span class="text-green60 font-medium">Features</span></h2>
+        <p class="text-gray70 text-sm mt-3">
+          Experience a host of powerful features at YourBank,
+          including seamless online banking, secure transactions,
+          and personalized financial insights,
+          all designed to enhance your banking experience
+        </p>
+      </div>
+      <div id="OurFeaturesContent" class="mt-12 p-5">
+        <div id="ConteinerNav" class="h-24 w-auto overflow-hidden relative flex items-center bg-gray11 rounded-md">
+          <div id="ContentNav" class=" flex flex-nowrap transition-colors p-5 items-center whitespace-nowrap text-white">
+          <a href="#" id="active" class="rounded-full w-auto py-3 px-5 mr-5 bg-gray10 border border-gray15 text-green60">Online Banking</a>
+          <a href="#" class="rounded-full w-auto py-3 px-5 mr-5 bg-gray10 border border-gray15">Financial Tools</a>
+          <a href="#" class="rounded-full w-auto py-3 px-5 mr-5 bg-gray10 border border-gray15">Customer Support</a>
+          </div>
+          
         </div>
-
-
-
-        <div></div>
-        <div></div>
+        <div id="ContentCards" class="pt-5">
+          <div id="Card" class="bg-gray11 border-gray15 border rounded-xl p-8">
+            <div id="Title" class="flex justify-between pb-5">
+              <h2 class="text-white text-xl">24/7 Account Access</h2>
+              <img src="img/icons/arrow.svg" alt="arrow-ico">
+            </div>
+            <p class="text-gray70">
+              Enjoy the convenience of accessing your accounts anytime,
+              anywhere through our secure online banking platform.
+              Check balances, transfer funds, 
+              and pay bills with ease.
+            </p>
+          </div>
+          <div id="Card" class="bg-gray11 border-gray15 border rounded-xl p-8 mt-5">
+            <div id="Title" class="flex justify-between pb-5">
+              <h2 class="text-white text-xl">Mobile Banking App</h2>
+              <img src="img/icons/arrow.svg" alt="arrow-ico">
+            </div>
+            <p class="text-gray70">
+              Stay connected to your finances on the go with our user-friendly mobile banking app. 
+              Easily manage your accounts, deposit checks, 
+              and make payments from your smartphone or tablet.
+            </p>
+          </div>
+          <div id="Card" class="bg-gray11 border-gray15 border rounded-xl p-8 mt-5">
+            <div id="Title" class="flex justify-between pb-5">
+              <h2 class="text-white text-xl">Secure Transactions</h2>
+              <img src="img/icons/arrow.svg" alt="arrow-ico">
+            </div>
+            <p class="text-gray70">
+              Rest assured knowing that your transactions are protected 
+              by industry-leading security measures. 
+              We employ encryption and multi-factor authentication to safeguard 
+              your financial information.
+            </p>
+          </div>
+          <div id="Card" class="bg-gray11 border-gray15 border rounded-xl p-8 mt-5">
+            <div id="Title" class="flex justify-between pb-5">
+              <h2 class="text-white text-xl">Bill Pay and Transfers</h2>
+              <img src="img/icons/arrow.svg" alt="arrow-ico">
+            </div>
+            <p class="text-gray70">
+              Save time and avoid late fees with our convenient bill pay service. 
+              Set up recurring payments or make one-time transfers between your accounts 
+              with just a few clicks.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 </main>
 
+<script>
+  let isDragging = false;
+  let startX;
+  let scrollLeft;
 
+  const container = document.getElementById('ConteinerNav');
+  const content = document.getElementById('ContentNav');
+
+  container.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX - container.offsetLeft;
+    scrollLeft = container.scrollLeft;
+  });
+
+  container.addEventListener('mouseleave', () => {
+    isDragging = false;
+  });
+
+  container.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+
+  container.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    const x = e.pageX - container.offsetLeft;
+    const walk = (x - startX) * 1.5; // Adjust the sensitivity
+    container.scrollLeft = scrollLeft - walk;
+  });
+</script>
 </body>
 </html>
