@@ -54,6 +54,12 @@ module.exports = {
       width: {
         119: '19rem',
       },
+      screens: {
+        'desktbig': '1920px',
+        'desktop': '1366px',
+        'laptop': '1028px',
+        'ipad': '768px',
+      },
     },
   },
   plugins: [],

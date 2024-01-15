@@ -7,8 +7,8 @@
   <title>Bank</title>
 </head>
 <body>
-  <main class="bg-gray10 bg-[url('/img/bg-img/bg-dots-fade-mobile.svg')] bg-no-repeat">
-    <section class="Header-container w-full px-4 py-10 md:px-20">
+  <main class="bg-gray10 bg-[url('/img/bg-img/bg-dots-fade-mobile.svg')] bg-no-repeat px-4 ipad:px-8 laptop:px-20">
+    <section class="Header-container w-full py-10">
       <nav class="flex justify-between items-center p-4 bg-gray11 h-16 rounded-full border border-gray15">
         <picture>
           <img src="img/logo/Logo-mobile.svg" alt="mobile-logo">
@@ -19,24 +19,24 @@
       </nav>
     </section>
 
-    <section id="Welcome" class="h-full flex flex-col justify-center md:flex-row md:justify-between md:mx-20">
-      <div class="flex flex-col items-center mt-12 px-4 justify-center md:items-start">
-        <section class="bg-gray15 py-2 rounded-full justify-center flex w-[240px] mb-3 hover:bg-gray20 transition-colors">
+    <section id="Welcome" class="h-full flex flex-col items-center laptop:flex-row laptop:justify-between">
+      <div class="flex flex-col mt-12 items-center min-w-min max-w-md ipad:max-w-xl laptop:mt-0 laptop:items-start">
+        <section class="flex justify-center items-center py-2 mb-3 rounded-full hover:bg-gray20 bg-gray15 transition-colors">
           <img src="img/icons/checkmark.svg" class="pl-2" alt="">
-          <p class="font-light pr-4 pl-1 text-xs self-center text-white">No LLC Required, No Credit Check.</p>
+          <p class="font-light pr-4 pl-1 text-xs text-white ipad:text-base">No LLC Required, No Credit Check.</p>
         </section>
-        <section class="flex justify-center text-center md:text-start">
-          <h2 class="text-white font-medium text-[1.50rem] xl:text-[2.5rem]">Welcome to YourBank Empowering Your <span class="text-green60">Financial Journey</>
-          <p class="text-white font-light text-sm pt-2">At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.</p>
+        <section class="flex justify-center text-center laptop:text-start">
+          <h2 class="text-white font-medium text-[1.50rem] leading-normal ipad:leading-normal ipad:text-4xl desktop:leading-snug desktop:text-4xl">Welcome to YourBank Empowering Your <span class="text-green60">Financial Journey</>
+          <p class="text-white font-light text-sm pt-2 ipad:mx-20 ipad:text-base laptop:mx-0">At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.</p>
         </section>
-        <a href="#" class="align-middle items-center mt-8 w-36 h-12 rounded-full bg-green65 flex justify-center hover:bg-green70 transition-colors">Open Account</a>
+        <a href="#" class="flex justify-center items-center mt-8 px-5 py-3 rounded-full bg-green65  hover:bg-green70 transition-colors ipad:px-10 ipad:py-4 ipad:text-lg">Open Account</a>
       </div>
 
 
 
-      <div class="flex justify-center">
-        <img src="img/bg-img/arrow.svg" alt="" class="absolute translate-x-24 translate-y-32 z-10">
-        <div class="flex flex-col z-10 mt-20 h-full py-5 w-[26rem]">
+      <div class="flex justify-center ipad:scale-125 ipad:my-20 laptop:scale-110 desktop:scale-125 desktop:mr-24 desktopbig:mr-52">
+        <img src="img/bg-img/arrow.svg" alt="" class="absolute translate-x-24 translate-y-32 z-10 laptop:w-80 laptop:translate-y-8 laptop:translate-x-24">
+        <div class="flex flex-col z-10 mt-20 h-full py-5 w-[26rem] laptop:mt-0">
           <div class="relative w-[8rem] h-12 translate-y-5 translate-x-2 bg-green60 bg-opacity-10 rounded-md">
             <div class="flex justify-between">
               <a href="#" class="bg-green60 rounded-full w-7 h-7 flex justify-center translate-y-2.5 translate-x-2.5">
@@ -147,248 +147,270 @@
       </div>
 
     </section>
+
     <section id="Our Us" class="h-full mt-20">
-      <div id="Our Products" class="flex flex-col mx-4">
-        <div id="top-table-product" class="justify-center items-center">
-          <div class="flex flex-col justify-center items-center">
-            <h2 class="text-white font-medium text-3xl mb-5">Our <span class="text-green60 font-medium">Products</span></h2>
-            <p class="text-gray70 font-light text-sm text-center">Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations</p>
+      <div id="Our Products" class="flex flex-col items-center desktop:items-start">
+        <div id="top-table-product" class="justify-center items-center desktop:w-full desktop:flex-row">
+          <div class="flex flex-col justify-center items-center max-w-3xl desktop:items-start desktop:translate-y-20">
+            <h2 class="text-white font-medium text-3xl mb-5 desktop:text-4xl">Our <span class="text-green60 font-medium">Products</span></h2>
+            <p class="text-gray70 font-light text-sm text-center min-w-min max-w-lg desktop:text-start desktop:text-base">Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations</p>
           </div>
-          <div class="px-8 mt-5">
-            <button class= "border border-gray15 p-3 flex justify-around items-center bg-gray11 rounded-full w-full h-16">
+          <div class="flex mt-5 justify-center desktop:justify-end">
+            <button class= "border max-w-md border-gray15 p-3 flex justify-around items-center bg-gray11 rounded-full w-full h-16">
               <a href="" class="bg-green60 h-10 w-full flex items-center justify-center rounded-full text-black font-medium">For Individuals</a>
               <a href="" class="text-white h-10 w-full flex items-center justify-center font-medium">For Businesses</a>
             </button>
           </div>
         </div>
-        <div id="bottom-table-product" class="mt-16">
-          <div id="Checking" class="flex flex-col justify-centers items-center">
+        <div id="bottom-table-product" class="flex flex-col mt-16 h-full laptop:flex-row">
+          <div id="Checking" class="flex flex-col justify-centers items-center w-full">
             <div class="mb-6 w-[4.5rem] h-[4.5rem] flex items-center justify-center bg-gradient-to-t from-[#19191950] to-[#CAFF3330] rounded-full">
               <div class="w-[3.5rem] h-[3.5rem] flex items-center justify-center bg-gradient-to-t from-[#19191950] to-[#CAFF3330] rounded-full">
                 <img class="drop-shadow-2xl" src="img/icons/case.svg" alt="case">
               </div>
             </div>
             <h2 class="mb-3 text-white font-medium flex justify-center text-xl">Checking Accounts</h2>
-            <p class="text-gray70 font-light text-center">Enjoy easy and convenient access to your funds with our range of checking account options. Benefit from features such as online and mobile banking, debit cards, and free ATM access.</p>
+            <p class="text-gray70 font-light text-center max-w-lg">Enjoy easy and convenient access to your funds with our range of checking account options. Benefit from features such as online and mobile banking, debit cards, and free ATM access.</p>
           </div>
-          <div class="bg-gray15 w-full h-[1px] my-8"></div>
-          <div id="Savings" class="flex flex-col justify-centers items-center">
+
+          <div class=" bg-gray15 w-full h-[1px] my-8 laptop:h-auto laptop:w-[1px] laptop:my-0 laptop:mx-10"></div>
+
+          <div id="Savings" class="flex flex-col justify-centers items-center w-full">
             <div class="mb-6 w-[4.5rem] h-[4.5rem] flex items-center justify-center bg-gradient-to-t from-[#19191950] to-[#CAFF3330] rounded-full">
               <div class="w-[3.5rem] h-[3.5rem] flex items-center justify-center bg-gradient-to-t from-[#19191950] to-[#CAFF3330] rounded-full">
                 <img class="drop-shadow-2xl" src="img/icons/bag.svg" alt="case">
               </div>
             </div>
             <h2 class="mb-3 text-white font-medium flex justify-center text-xl">Savings Accounts</h2>
-            <p class="text-gray70 font-light text-center">Build your savings with our competitive interest rates and flexible savings account options. Whether you're saving for a specific goal or want to grow your wealth over time, we have the right account for you.</p>
+            <p class="text-gray70 font-light text-center max-w-lg">Build your savings with our competitive interest rates and flexible savings account options. Whether you're saving for a specific goal or want to grow your wealth over time, we have the right account for you.</p>
           </div>
-          <div class="bg-gray15 w-full h-[1px] my-8"></div>
-          <div id="Loans" class="flex flex-col justify-centers items-center">
+
+          <div class=" bg-gray15 w-full h-[1px] my-8 laptop:h-auto laptop:w-[1px] laptop:my-0 laptop:mx-10"></div>
+
+          <div id="Loans" class="flex flex-col justify-centers items-center w-full">
             <div class="mb-6 w-[4.5rem] h-[4.5rem] flex items-center justify-center bg-gradient-to-t from-[#19191950] to-[#CAFF3330] rounded-full">
               <div class="w-[3.5rem] h-[3.5rem] flex items-center justify-center bg-gradient-to-t from-[#19191950] to-[#CAFF3330] rounded-full">
                 <img class="drop-shadow-2xl" src="img/icons/photograph.svg" alt="case">
               </div>
             </div>
             <h2 class="mb-3 text-white font-medium flex justify-center text-xl">Loans and Mortgages</h2>
-            <p class="text-gray70 font-light text-center">Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application process and help you secure the funds you need.</p>
+            <p class="text-gray70 font-light text-center max-w-lg">Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application process and help you secure the funds you need.</p>
           </div>
+
         </div>
       </div>
     </section>
 
-    <section id="Use Cases" class="h-auto mt-20">
+    <section id="Use Cases" class="flex justify-center h-auto mt-20">
       <div id="ALL" class="mx-4">
-        <div id="Top">
-          <h2 class="text-green60 flex justify-center font-medium text-3xl mb-5">Use Cases</h2>
-          <p class="text-gray70 font-light text-center">At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions</p>
+        <div id="Top" class="">
+          <h2 class="text-green60 flex justify-center font-medium text-3xl mb-5 laptop:text-4xl laptop:justify-start">Use Cases</h2>
+          <p class="text-gray70 font-light text-center laptop:text-start">At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions</p>
         </div>
-        <div id="Table-one" class="container mt-16 max-w-sm p-5 bg-gray11 bg-[url('/img/bg-img/bg-dots-fade-l.svg')] bg-no-repeat rounded-md h-auto text-white">
-          <div id="1column" class="flex mb-3">
-            <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl grow mr-3">
-              <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full">
-                <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
-                  <img class="drop-shadow-2xl w-7" src="img/icons/take-money-1.svg" alt="case">
-                </div>
-              </div>
-              <div class="flex justify-center items-center text-center">
-                <p class="text-base font-normal">Managing Personal Finances</p>
-              </div>
-            </div>
-            <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl grow">
-              <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full">
-                <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
-                  <img class="drop-shadow-2xl w-7" src="img/icons/save-money-2.svg" alt="case">
-                </div>
-              </div>
-              <div class="flex justify-center items-center text-center">
-                <p class="text-base font-normal">Saving for the Future</p>
-              </div>
-            </div>
-          </div>
-
-          <div id="2column" class="flex">
-            <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl mr-3 grow">
-              <div class="flex flex-col justify-center items-center h-full translate-y-[-0.9rem]">
-                <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full translate-y-1">
-                  <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
-                    <img class="drop-shadow-2xl w-7" src="img/icons/bank-money-3.svg" alt="case">
-                  </div>
-                </div>
-                <div class="flex justify-center items-center text-center">
-                  <p class="text-base font-normal">Homeownership</p>
-                </div>
-              </div>
-            </div>
-            <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl grow">
-              <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full">
-                <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
-                  <img class="drop-shadow-2xl w-7" src="img/icons/book-4.svg" alt="case">
-                </div>
-              </div>
-              <div class="flex justify-center items-center text-center">
-                <p class="text-base font-normal">Education Funding</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="For-Individuals">
-          <div id="Top-individuals" class="mt-8">
-            <h2 class="text-white mb-3 text-center font-medium text-2xl">For Individuals</h2>
-            <p class="text-gray70 text-center">For individuals, our mortgage services pave the way to homeownership,
-                and our flexible personal loans provide vital support during various life milestones.
-                We also prioritize retirement planning, 
-                ensuring a financially secure future for our customers</p>
-            <div id="Bottom-individuals" class="flex flex-col mt-14">
-              <div>
-                <h2 class="text-green60 text-center text-4xl font-medium">78%</h2>
-                <p class="text-gray70 text-center text-sm pt-2">Secure Retirement Planning</p>
-              </div>
-
-              <div class="bg-gray15 w-full h-[1px] my-8"></div>
-
-              <div>
-                <h2 class="text-green60 text-center text-4xl font-medium">63%</h2>
-                <p class="text-gray70 text-center text-sm pt-2">Manageable Debt Consolidation</p>
-              </div>
-
-              <div class="bg-gray15 w-full h-[1px] my-8"></div>
-
-              <div>
-                <h2 class="text-green60 text-center text-4xl font-medium">91%</h2>
-                <p class="text-gray70 text-center text-sm pt-2">Reducing financial burdens</p>              
-              </div>
-
-            </div>
-            
-            <div class="w-32 h-14 mt-14 m-auto text-white flex items-center  justify-center bg-gray11 rounded-full border border-gray15">
-              <a href="">Learn More</a>
-            </div>
-
-          </div>
-        </div>
-        <div id="For-business">
-          <div id="Table-two" class="container mt-12 max-w-sm p-5 bg-gray11 bg-[url('/img/bg-img/bg-dots-fade-l.svg')] bg-no-repeat rounded-md h-auto text-white">
-            <div id="1column" class="flex mb-3">
-              <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl grow mr-3">
-                <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full">
-                  <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
-                    <img class="drop-shadow-2xl w-7" src="img/icons/home-1.svg" alt="case">
-                  </div>
-                </div>
-                <div class="flex justify-center items-center text-center">
-                  <p class="text-base font-normal">Startups and Entrepreneurs</p>
-                </div>
-              </div>
-              <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl grow">
-                <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full">
-                  <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
-                    <img class="drop-shadow-2xl w-7" src="img/icons/photograph.svg" alt="case">
-                  </div>
-                </div>
-                <div class="flex justify-center items-center text-center">
-                  <p class="text-base font-normal">Cash Flow Management</p>
-                </div>
-              </div>
-            </div>
-            <div id="2column" class="flex">
-              <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl mr-3 grow">
-                <div class="flex flex-col justify-center items-center h-full">
+        <div id="Content" class="laptop:flex laptop:flex-col laptop:mt-11">
+          
+          <div id="For-individuals" class="flex flex-col items-center laptop:flex laptop:flex-row">
+            <div id="Table-one" class="container mt-16 p-5 h-min max-w-3xl bg-gray11 bg-[url('/img/bg-img/bg-dots-fade-l.svg')] bg-no-repeat rounded-md text-white laptop:mt-0 laptop:w-auto">
+              <div id="1column" class="flex mb-3">
+                <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl grow mr-3 laptop:h-auto">
                   <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full">
                     <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
-                      <img class="drop-shadow-2xl w-7" src="img/icons/table-3.svg" alt="case">
+                      <img class="drop-shadow-2xl w-7" src="img/icons/take-money-1.svg" alt="case">
                     </div>
                   </div>
                   <div class="flex justify-center items-center text-center">
-                    <p class="text-base font-normal">Business Expansion</p>
+                    <p class="text-base font-normal">Managing Finances</p>
+                  </div>
+                </div>
+                <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl grow laptop:h-auto">
+                  <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full">
+                    <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
+                      <img class="drop-shadow-2xl w-7" src="img/icons/save-money-2.svg" alt="case">
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center text-center">
+                    <p class="text-base font-normal">Saving for the Future</p>
                   </div>
                 </div>
               </div>
-              <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl grow">
-                <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full">
-                  <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
-                    <img class="drop-shadow-2xl w-7" src="img/icons/cent-4.svg" alt="case">
+              <div id="2column" class="flex">
+                <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl mr-3 grow laptop:h-auto laptop:w-auto">
+                  <div class="flex flex-col justify-center items-center h-full translate-y-[-0.9rem]">
+                    <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full translate-y-1">
+                      <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
+                        <img class="drop-shadow-2xl w-7" src="img/icons/bank-money-3.svg" alt="case">
+                      </div>
+                    </div>
+                    <div class="flex justify-center items-center text-center">
+                      <p class="text-base font-normal">Homeownership</p>
+                    </div>
                   </div>
                 </div>
-                <div class="flex justify-center items-center text-center">
-                  <p class="text-base font-normal">Payment Solutions</p>
+                <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl grow laptop:h-auto laptop:w-auto">
+                  <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full">
+                    <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
+                      <img class="drop-shadow-2xl w-7" src="img/icons/book-4.svg" alt="case">
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center text-center">
+                    <p class="text-base font-normal">Education Funding</p>
+                  </div>
                 </div>
               </div>
+            </div>
+
+            <div id="Top" class="mt-8 laptop:mt-0 laptop:w-1/2 laptop:ml-16">
+              <div id="Header individuals" class="laptop:flex laptop:flex-col">
+                <h2 class="text-white mb-3 text-center font-medium text-2xl laptop:text-start">For Individuals</h2>
+                <p class="text-gray70 text-center laptop:text-start">
+                  For individuals, our mortgage services pave the way to homeownership,
+                  and our flexible personal loans provide vital support 
+                  during various life milestones.
+                  We also prioritize retirement planning, 
+                  ensuring a financially secure future for our customers
+                </p>
+              </div>
+              
+              <div id="Bottom-individuals" class="flex flex-col mt-14 laptop:flex-row">
+                <div class="laptop:flex laptop:flex-col">
+                  <h2 class="text-green60 text-center text-4xl font-medium">78%</h2>
+                  <p class="text-gray70 text-center text-sm pt-2">Secure Retirement Planning</p>
+                </div>
+  
+                <div class="bg-gray15 w-full h-[1px] my-8 laptop:w-[1px] laptop:h-auto laptop:mx-12 laptop:my-0"></div>
+  
+                <div>
+                  <h2 class="text-green60 text-center text-4xl font-medium">63%</h2>
+                  <p class="text-gray70 text-center text-sm pt-2">Manageable Debt Consolidation</p>
+                </div>
+  
+                <div class="bg-gray15 w-full h-[1px] my-8 laptop:w-[1px] laptop:h-auto laptop:mx-12 laptop:my-0"></div>
+  
+                <div>
+                  <h2 class="text-green60 text-center text-4xl font-medium">91%</h2>
+                  <p class="text-gray70 text-center text-sm pt-2">Reducing financial burdens</p>              
+                </div>
+  
+              </div>
+              
+              <div class="w-32 h-14 mt-14 m-auto text-white flex items-center justify-center bg-gray11 rounded-full border border-gray15">
+                <a href="">Learn More</a>
+              </div>
+  
             </div>
           </div>
-          <div id="Top-For-Business" class="mt-8">
-            <h2 class="text-white mb-3 text-center font-medium text-2xl">For Business</h2>
-            <p class="text-gray70 text-center"> For businesses,
-                we empower growth with working capital solutions that optimize cash flow,
-                and our tailored financing options fuel business expansion.
-                Whatever your financial aspirations,
-                YourBank is committed to providing the right tools and support to achieve them</p>
-            <div id="Bottom-individuals" class="flex flex-col mt-14">
-              <div>
-                <h2 class="text-green60 text-center text-4xl font-medium">65%</h2>
-                <p class="text-gray70 text-center text-sm pt-2">Cash Flow Management</p>
+
+          <div id="For-business" class="flex flex-col items-center laptop:flex laptop:flex-row-reverse laptop:py-10">
+            <div id="Table-two" class="container mt-16 p-5 h-min max-w-3xl bg-gray11 bg-[url('/img/bg-img/bg-dots-fade-l.svg')] bg-no-repeat rounded-md text-white laptop:mt-0 laptop:ml-16 laptop:w-auto">
+              <div id="1column" class="flex mb-3">
+                <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl grow mr-3">
+                  <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full">
+                    <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
+                      <img class="drop-shadow-2xl w-7" src="img/icons/home-1.svg" alt="case">
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center text-center">
+                    <p class="text-base font-normal">Startups and Entrepreneurs</p>
+                  </div>
+                </div>
+                <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl grow">
+                  <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full">
+                    <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
+                      <img class="drop-shadow-2xl w-7" src="img/icons/photograph.svg" alt="case">
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center text-center">
+                    <p class="text-base font-normal">Cash Flow Management</p>
+                  </div>
+                </div>
               </div>
-
-              <div class="bg-gray15 w-full h-[1px] my-8"></div>
-
-              <div>
-                <h2 class="text-green60 text-center text-4xl font-medium">70%</h2>
-                <p class="text-gray70 text-center text-sm pt-2">Drive Business Expansion</p>
+              <div id="2column" class="flex">
+                <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl mr-3 grow">
+                  <div class="flex flex-col justify-center items-center h-full">
+                    <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full">
+                      <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
+                        <img class="drop-shadow-2xl w-7" src="img/icons/table-3.svg" alt="case">
+                      </div>
+                    </div>
+                    <div class="flex justify-center items-center text-center">
+                      <p class="text-base font-normal">Business Expansion</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex px-4 py-5 flex-col justify-center items-center h-40 w-40 bg-gray11 border border-gray15 rounded-xl grow">
+                  <div class="mb-3 w-[4.0rem] h-[4.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191990] to-[#CAFF3310] rounded-full">
+                    <div class="w-[3.0rem] h-[3.0rem] flex items-center justify-center bg-gradient-to-t from-[#19191930] to-[#CAFF3325] rounded-full">
+                      <img class="drop-shadow-2xl w-7" src="img/icons/cent-4.svg" alt="case">
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center text-center">
+                    <p class="text-base font-normal">Payment Solutions</p>
+                  </div>
+                </div>
               </div>
-
-              <div class="bg-gray15 w-full h-[1px] my-8"></div>
-
-              <div>
-                <h2 class="text-green60 text-center text-4xl font-medium">45%</h2>
-                <p class="text-gray70 text-center text-sm pt-2">Streamline payroll processing</p>              
-              </div>
-
             </div>
-            
-            <div class="w-32 h-14 mt-14 m-auto text-white flex items-center  justify-center bg-gray11 rounded-full border border-gray15">
-              <a href="">Learn More</a>
-            </div>
 
+            <div id="Top-For-Business" class="mt-8 laptop:mt-0 laptop:w-1/2">
+              <div id="Header business" class="laptop:flex laptop:flex-col">
+                <h2 class="text-white mb-3 text-center font-medium text-2xl laptop:text-end">For Business</h2>
+                <p class="text-gray70 text-center laptop:text-end"> For businesses,
+                  we empower growth with working capital solutions that optimize cash flow,
+                  and our tailored financing options fuel business expansion.
+                  Whatever your financial aspirations,
+                  YourBank is committed to providing the right tools and support to achieve them
+                </p>
+              </div>
+              
+              <div id="Bottom-individuals" class="flex flex-col mt-14 laptop:flex-row">
+                <div>
+                  <h2 class="text-green60 text-center text-4xl font-medium">65%</h2>
+                  <p class="text-gray70 text-center text-sm pt-2">Cash Flow Management</p>
+                </div>
+  
+                <div class="bg-gray15 w-full h-[1px] my-8 laptop:w-[1px] laptop:h-auto laptop:mx-12 laptop:my-0"></div>
+  
+                <div>
+                  <h2 class="text-green60 text-center text-4xl font-medium">70%</h2>
+                  <p class="text-gray70 text-center text-sm pt-2">Drive Business Expansion</p>
+                </div>
+  
+                <div class="bg-gray15 w-full h-[1px] my-8 laptop:w-[1px] laptop:h-auto laptop:mx-12 laptop:my-0"></div>
+  
+                <div>
+                  <h2 class="text-green60 text-center text-4xl font-medium">45%</h2>
+                  <p class="text-gray70 text-center text-sm pt-2">Streamline payroll processing</p>              
+                </div>
+  
+              </div>
+              
+              <a class="w-32 h-14 mt-14 m-auto text-white flex items-center  justify-center bg-gray11 rounded-full border border-gray15" href="#">
+                Learn More
+              </a>
+  
+            </div>
           </div>
         </div>
+        
       </div>
     </section>
 
 
     <section id="Our features" class="h-auto mt-20">
-      <div id="OurFeaturesHeader" class="text-center mx-5">
-        <h2 class="text-white font-medium text-3xl mb-5">Our<span class="text-green60 font-medium">Features</span></h2>
-        <p class="text-gray70 text-sm mt-3">
+      <div id="OurFeaturesHeader" class="text-center mx-5 laptop:text-start">
+        <h2 class="text-white font-medium text-3xl mb-5 laptop:text-4xl">Our<span class="text-green60 font-medium">Features</span></h2>
+        <p class="text-gray70 text-sm mt-3 laptop:text-base">
           Experience a host of powerful features at YourBank,
           including seamless online banking, secure transactions,
           and personalized financial insights,
           all designed to enhance your banking experience
         </p>
       </div>
-      <div id="OurFeaturesContent" class="mt-12 p-5">
-        <div id="ConteinerNav" class="h-24 w-auto overflow-hidden relative flex items-center bg-gray11 rounded-md">
-          <div id="ContentNav" class=" flex flex-nowrap transition-colors p-5 items-center whitespace-nowrap text-white">
-          <a href="#" id="active" class="rounded-full w-auto py-3 px-5 mr-5 bg-gray10 border border-gray15 text-green60">Online Banking</a>
-          <a href="#" class="rounded-full w-auto py-3 px-5 mr-5 bg-gray10 border border-gray15">Financial Tools</a>
-          <a href="#" class="rounded-full w-auto py-3 px-5 mr-5 bg-gray10 border border-gray15">Customer Support</a>
+      <div id="OurFeaturesContent" class="mt-12 p-5 laptop:flex laptop:flex-row">
+        <div id="ConteinerNav" class="h-24 w-auto overflow-hidden relative flex items-center bg-gray11 rounded-md laptop:h-72 laptop:w-96">
+          <div id="ContentNav" class=" flex flex-nowrap transition-colors p-5 items-center whitespace-nowrap text-white laptop:flex-col laptop:items-start">
+          <a href="#" id="active" class="rounded-full w-auto py-3 px-5 mr-5 bg-gray10 border border-gray15 text-green60 laptop:mr-0 laptop:w-full laptop:text-center">Online Banking</a>
+          <a href="#" class="rounded-full w-auto py-3 px-5 mr-5 bg-gray10 border border-gray15 laptop:mr-0 laptop:mt-5 laptop:w-full laptop:text-center">Financial Tools</a>
+          <a href="#" class="rounded-full w-auto py-3 px-5 mr-5 bg-gray10 border border-gray15 laptop:mr-0 laptop:mt-5 laptop:w-full laptop:text-center">Customer Support</a>
           </div>
           
         </div>
@@ -633,6 +655,8 @@
           </div>
       </div>
     </footer>
+
+    <div class="2xl"></div>
 </main>
 
 <script>
