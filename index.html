@@ -13,7 +13,31 @@
         <picture>
           <img src="img/logo/Logo-mobile.svg" alt="mobile-logo">
         </picture>
-        <a href="#" class="rounded-full bg-green65 w-14 h-10 flex justify-center hover:bg-green70 transition-colors">
+        <ul id="Nav Buttons" class="text-white hidden ipad:flex">
+          <li class="mr-8">
+            <a href="#" class="bg-gray15 rounded-full px-5 py-3">Home</a>
+          </li>
+          <li class="mr-8">
+            <a href="#">Careers</a>
+          </li>
+          <li class="mr-8">
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Security</a>
+          </li>
+        </ul>
+
+        <ul id="Nav Login" class="items-center hidden ipad:flex">
+          <li id="Sign Up" class="mr-4 text-white">
+            <a href="#">Sign Up</a>
+          </li>
+          <li id="Login" class="bg-green60 py-3 px-7 rounded-full">
+            <a href="#">Login</a>
+          </li>
+        </ul>
+
+        <a href="#" class="rounded-full bg-green65 w-14 h-10 flex justify-center hover:bg-green70 transition-colors ipad:hidden">
           <img src="img/icons/menu.svg" alt="menu-ico" class="w-8">
         </a>
       </nav>
@@ -152,8 +176,8 @@
       <div id="Our Products" class="flex flex-col items-center desktop:items-start">
         <div id="top-table-product" class="justify-center items-center desktop:w-full desktop:flex-row">
           <div class="flex flex-col justify-center items-center max-w-3xl desktop:items-start desktop:translate-y-20">
-            <h2 class="text-white font-medium text-3xl mb-5 desktop:text-4xl">Our <span class="text-green60 font-medium">Products</span></h2>
-            <p class="text-gray70 font-light text-sm text-center min-w-min max-w-lg desktop:text-start desktop:text-base">Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations</p>
+            <h2 class="text-white font-medium text-4xl mb-5">Our <span class="text-green60 font-medium">Products</span></h2>
+            <p class="text-gray70 font-light text-sm text-center min-w-min max-w-lg desktop:text-start laptop:text-base">Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations</p>
           </div>
           <div class="flex mt-5 justify-center desktop:justify-end">
             <button class= "border max-w-md border-gray15 p-3 flex justify-around items-center bg-gray11 rounded-full w-full h-16">
@@ -202,7 +226,7 @@
     </section>
 
     <section id="Use Cases" class="flex justify-center h-auto mt-20">
-      <div id="ALL" class="mx-4">
+      <div id="ALL" class="">
         <div id="Top" class="">
           <h2 class="text-green60 flex justify-center font-medium text-3xl mb-5 laptop:text-4xl laptop:justify-start">Use Cases</h2>
           <p class="text-gray70 font-light text-center laptop:text-start">At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions</p>
@@ -396,7 +420,7 @@
 
 
     <section id="Our features" class="h-auto mt-20">
-      <div id="OurFeaturesHeader" class="text-center mx-5 laptop:text-start">
+      <div id="OurFeaturesHeader" class="text-center laptop:text-start">
         <h2 class="text-white font-medium text-3xl mb-5 laptop:text-4xl">Our<span class="text-green60 font-medium">Features</span></h2>
         <p class="text-gray70 text-sm mt-3 laptop:text-base">
           Experience a host of powerful features at YourBank,
@@ -405,161 +429,191 @@
           all designed to enhance your banking experience
         </p>
       </div>
-      <div id="OurFeaturesContent" class="mt-12 p-5 laptop:flex laptop:flex-row">
-        <div id="ConteinerNav" class="h-24 w-auto overflow-hidden relative flex items-center bg-gray11 rounded-md laptop:h-72 laptop:w-96">
-          <div id="ContentNav" class=" flex flex-nowrap transition-colors p-5 items-center whitespace-nowrap text-white laptop:flex-col laptop:items-start">
-          <a href="#" id="active" class="rounded-full w-auto py-3 px-5 mr-5 bg-gray10 border border-gray15 text-green60 laptop:mr-0 laptop:w-full laptop:text-center">Online Banking</a>
-          <a href="#" class="rounded-full w-auto py-3 px-5 mr-5 bg-gray10 border border-gray15 laptop:mr-0 laptop:mt-5 laptop:w-full laptop:text-center">Financial Tools</a>
-          <a href="#" class="rounded-full w-auto py-3 px-5 mr-5 bg-gray10 border border-gray15 laptop:mr-0 laptop:mt-5 laptop:w-full laptop:text-center">Customer Support</a>
+      <div id="OurFeaturesContent" class="mt-12 laptop:flex laptop:flex-row desktop:p-0">
+        <div id="ConteinerNav" class="h-24 w-auto overflow-hidden relative flex items-center bg-gray11 rounded-md laptop:justify-center laptop:h-72 laptop:min-w-min laptop:mr-4 laptop:rounded-xl desktbig:w-[25rem]">
+          <div id="ContentNav" class="flex flex-nowrap transition-colors p-5 items-center whitespace-nowrap text-white laptop:flex-col laptop:items-start">
+          <a href="#" id="active" class="rounded-full w-full py-3 px-5 mr-5 bg-gray10 border border-gray15 text-green60 laptop:mr-0 laptop:w-full laptop:text-center desktop:py-4 desktop:px-8">Online Banking</a>
+          <a href="#" class="rounded-full w-full py-3 px-5 mr-5 bg-gray10 border border-gray15 laptop:mr-0 laptop:mt-5 laptop:w-full laptop:text-center desktop:py-4 desktop:px-8">Financial Tools</a>
+          <a href="#" class="rounded-full w-full py-3 px-5 mr-5 bg-gray10 border border-gray15 laptop:mr-0 laptop:mt-5 laptop:w-full laptop:text-center desktop:py-4 desktop:px-8">Customer Support</a>
           </div>
           
         </div>
-        <div id="ContentCards" class="pt-5">
-          <div id="Card" class="bg-gray11 border-gray15 border rounded-xl p-8">
-            <div id="Title" class="flex justify-between pb-5">
-              <h2 class="text-white text-xl">24/7 Account Access</h2>
-              <img src="img/icons/arrow.svg" alt="arrow-ico">
+        <div id="ContentCards" class="pt-5 flex flex-col laptop:pt-0 desktop:flex-row desktop:w-full desktop:h-full desktop:flex-wrap">
+          <div id="Card-section" class="desktop:w-1/2 desktop:pb-2 desktop:pr-2">
+            <div id="Card" class="bg-gray11 border-gray15 border rounded-xl p-8 desktop:p-10 desktop:flex desktop:flex-col desktop:h-full">
+              <div id="Title" class="flex justify-between pb-5">
+                <h2 class="text-white text-xl">24/7 Account Access</h2>
+                <img src="img/icons/arrow.svg" alt="arrow-ico">
+              </div>
+              <p class="text-gray70">
+                Enjoy the convenience of accessing your accounts anytime,
+                anywhere through our secure online banking platform.
+                Check balances, transfer funds, 
+                and pay bills with ease.
+              </p>
             </div>
-            <p class="text-gray70">
-              Enjoy the convenience of accessing your accounts anytime,
-              anywhere through our secure online banking platform.
-              Check balances, transfer funds, 
-              and pay bills with ease.
-            </p>
           </div>
-          <div id="Card" class="bg-gray11 border-gray15 border rounded-xl p-8 mt-5">
-            <div id="Title" class="flex justify-between pb-5">
-              <h2 class="text-white text-xl">Mobile Banking App</h2>
-              <img src="img/icons/arrow.svg" alt="arrow-ico">
+          
+
+          <div id="Card-section" class="desktop:w-1/2 desktop:pl-2 desktop:pb-2">
+            <div id="Card" class="bg-gray11 border-gray15 border rounded-xl p-8 mt-5 desktop:p-10 desktop:flex desktop:flex-col desktop:h-full desktop:mt-0">
+              <div id="Title" class="flex justify-between pb-5">
+                <h2 class="text-white text-xl">Mobile Banking App</h2>
+                <img src="img/icons/arrow.svg" alt="arrow-ico">
+              </div>
+              <p class="text-gray70">
+                Stay connected to your finances on the go with our user-friendly mobile banking app. 
+                Easily manage your accounts, deposit checks, 
+                and make payments from your smartphone or tablet.
+              </p>
             </div>
-            <p class="text-gray70">
-              Stay connected to your finances on the go with our user-friendly mobile banking app. 
-              Easily manage your accounts, deposit checks, 
-              and make payments from your smartphone or tablet.
-            </p>
           </div>
-          <div id="Card" class="bg-gray11 border-gray15 border rounded-xl p-8 mt-5">
-            <div id="Title" class="flex justify-between pb-5">
-              <h2 class="text-white text-xl">Secure Transactions</h2>
-              <img src="img/icons/arrow.svg" alt="arrow-ico">
+          
+          <div id="Card-section" class="desktop:w-1/2 desktop:pr-2 desktop:pt-2">
+            <div id="Card" class="bg-gray11 border-gray15 border rounded-xl p-8 mt-5 desktop:p-10 desktop:flex desktop:flex-col desktop:h-full desktop:mt-0">
+              <div id="Title" class="flex justify-between pb-5">
+                <h2 class="text-white text-xl">Secure Transactions</h2>
+                <img src="img/icons/arrow.svg" alt="arrow-ico">
+              </div>
+              <p class="text-gray70">
+                Rest assured knowing that your transactions are protected 
+                by industry-leading security measures. 
+                We employ encryption and multi-factor authentication to safeguard 
+                your financial information.
+              </p>
             </div>
-            <p class="text-gray70">
-              Rest assured knowing that your transactions are protected 
-              by industry-leading security measures. 
-              We employ encryption and multi-factor authentication to safeguard 
-              your financial information.
-            </p>
           </div>
-          <div id="Card" class="bg-gray11 border-gray15 border rounded-xl p-8 mt-5">
-            <div id="Title" class="flex justify-between pb-5">
-              <h2 class="text-white text-xl">Bill Pay and Transfers</h2>
-              <img src="img/icons/arrow.svg" alt="arrow-ico">
+
+          <div id="Card-section" class="desktop:w-1/2 desktop:pl-2 desktop:pt-2">
+            <div id="Card" class="bg-gray11 border-gray15 border rounded-xl p-8 mt-5 desktop:p-10 desktop:flex desktop:flex-col desktop:h-full desktop:mt-0">
+              <div id="Title" class="flex justify-between pb-5">
+                <h2 class="text-white text-xl">Bill Pay and Transfers</h2>
+                <img src="img/icons/arrow.svg" alt="arrow-ico">
+              </div>
+              <p class="text-gray70">
+                Save time and avoid late fees with our convenient bill pay service. 
+                Set up recurring payments or make one-time transfers between your accounts 
+                with just a few clicks.
+              </p>
             </div>
-            <p class="text-gray70">
-              Save time and avoid late fees with our convenient bill pay service. 
-              Set up recurring payments or make one-time transfers between your accounts 
-              with just a few clicks.
-            </p>
           </div>
+
+          
         </div>
       </div>
     </section>
 
-    <section id="Frequently Asked" class="h-auto mt-20 px-5">
+    <section id="Frequently Asked" class="h-auto mt-20">
       <div id="Freq Header" class="mb-12 flex flex-col">
-        <div class="flex justify-center mb-2">
-          <span class="text-green60 text-center font-medium text-2xl mr-1">Frequently</span>
-          <h1 class="text-white text-center font-medium text-2xl"> Asked Questions</h1>
+        <div class="flex justify-center mb-2 text-3xl laptop:text-4xl laptop:justify-start desktop:mb-4">
+          <span class="text-green60 font-medium mr-1">Frequently</span>
+          <h1 class="text-white font-medium"> Asked Questions</h1>
         </div>
-        <p class="text-gray70 text-base font-light text-center">
+        <p class="text-gray70 text-base font-light text-center laptop:text-start">
           Still you have any questions? 
           Contact our Team via support@yourbank.com</p>
       </div>
-      <div id="Frequently Cards" class="relative">
-        <div id="Frequently Card" class="mb-5 p-7 flex flex-col bg-gray11 border-gray15 border rounded-lg">
-          <h2 class="text-white text-xl font-medium">
-            How do I open an account with YourBank?
-          </h2>
-          <div id="row" class="my-5 bg-gray15 h-[1px]"></div>
-          <p class="text-gray70 text-base font-light">
-            Opening an account with YourBank is easy. 
-            Simply visit our website and click 
-            on the "Open an Account" button. Follow the prompts, 
-            provide the required information, and complete the application process. 
-            If you have any questions or need assistance, 
-            our customer support team is available to help.
-          </p>
+      <div id="Frequently Cards" class="relative desktop:flex desktop:flex-wrap">
+
+        <div id="Card-section" class="desktop:w-1/2 desktop:pr-2 desktop:pb-2">
+          <div id="Frequently Card" class="mb-5 p-7 flex flex-col bg-gray11 border-gray15 border rounded-lg desktop:mb-0 desktop:h-full">
+            <h2 class="text-white text-xl font-medium">
+              How do I open an account with YourBank?
+            </h2>
+            <div id="row" class="my-5 bg-gray15 h-[1px]"></div>
+            <p class="text-gray70 text-base font-light">
+              Opening an account with YourBank is easy. 
+              Simply visit our website and click 
+              on the "Open an Account" button. Follow the prompts, 
+              provide the required information, and complete the application process. 
+              If you have any questions or need assistance, 
+              our customer support team is available to help.
+            </p>
+          </div>
         </div>
-        <div id="Frequently Card" class="mb-5 p-7 flex flex-col bg-gray11 border-gray15 border rounded-lg">
-          <h2 class="text-white text-xl font-medium">
-            What documents do I need to 
-            provide to apply for a loan?
-          </h2>
-          <div id="row" class="my-5 bg-gray15 h-[1px]"></div>
-          <p class="text-gray70 text-base font-light">
-            The documents required for a loan application may vary depending 
-            on the type of loan you are applying for. 
-            Generally, you will need to provide identification documents 
-            (such as a passport or driver's license), proof of income 
-            (such as pay stubs or tax returns), and information about the collateral 
-            (if applicable). Our loan officers will guide you through the specific requirements 
-            during the application process.
-          </p>
+        
+        <div id="Card-section" class="desktop:w-1/2 desktop:pl-2 desktop:pb-2">
+          <div id="Frequently Card" class="mb-5 p-7 flex flex-col bg-gray11 border-gray15 border rounded-lg desktop:mb-0">
+            <h2 class="text-white text-xl font-medium">
+              What documents do I need to 
+              provide to apply for a loan?
+            </h2>
+            <div id="row" class="my-5 bg-gray15 h-[1px]"></div>
+            <p class="text-gray70 text-base font-light">
+              The documents required for a loan application may vary depending 
+              on the type of loan you are applying for. 
+              Generally, you will need to provide identification documents 
+              (such as a passport or driver's license), proof of income 
+              (such as pay stubs or tax returns), and information about the collateral 
+              (if applicable). Our loan officers will guide you through the specific requirements 
+              during the application process.
+            </p>
+          </div>
         </div>
-        <div id="Frequently Card" class="mb-5 p-7 flex flex-col bg-gray11 border-gray15 border rounded-lg">
-          <h2 class="text-white text-xl font-medium">
-            How can I access my accounts online?
-          </h2>
-          <div id="row" class="my-5 bg-gray15 h-[1px]"></div>
-          <p class="text-gray70 text-base font-light">
-            Accessing your accounts online is simple and secure. 
-            Visit our website and click on the "Login" button. Enter your username 
-            and password to access your accounts. If you haven't registered 
-            for online banking, click on the "Enroll Now" button and follow the 
-            registration process. If you need assistance, our customer support 
-            team is available to guide you.
-          </p>
+        
+        <div id="Card-section" class="desktop:w-1/2 desktop:pr-2 desktop:pt-2">
+          <div id="Frequently Card" class="mb-5 p-7 flex flex-col bg-gray11 border-gray15 border rounded-lg desktop:h-full desktop:mb-0">
+            <h2 class="text-white text-xl font-medium">
+              How can I access my accounts online?
+            </h2>
+            <div id="row" class="my-5 bg-gray15 h-[1px]"></div>
+            <p class="text-gray70 text-base font-light">
+              Accessing your accounts online is simple and secure. 
+              Visit our website and click on the "Login" button. Enter your username 
+              and password to access your accounts. If you haven't registered 
+              for online banking, click on the "Enroll Now" button and follow the 
+              registration process. If you need assistance, our customer support 
+              team is available to guide you.
+            </p>
+          </div>
         </div>
-        <div id="Frequently Card" class="p-7 flex flex-col bg-gray11 border-gray15 border rounded-lg">
-          <h2 class="text-white text-xl font-medium">
-            Are my transactions and personal information secure?
-          </h2>
-          <div id="row" class="my-5 bg-gray15 h-[1px]"></div>
-          <p class="text-gray70 text-base font-light">
-            At YourBank, we prioritize the security of your transactions and personal 
-            information. We employ industry-leading encryption and multi-factor 
-            authentication to ensure that your data is protected. Additionally, we regularly 
-            update our security measures to stay ahead of emerging threats. 
-            You can bank with confidence knowing that we have robust 
-            security systems in place.
-          </p>
+        
+        <div id="Card-section" class="desktop:w-1/2 desktop:pl-2 desktop:pt-2">
+          <div id="Frequently Card" class="p-7 flex flex-col bg-gray11 border-gray15 border rounded-lg desktop:mb-0">
+            <h2 class="text-white text-xl font-medium">
+              Are my transactions and personal information secure?
+            </h2>
+            <div id="row" class="my-5 bg-gray15 h-[1px]"></div>
+            <p class="text-gray70 text-base font-light">
+              At YourBank, we prioritize the security of your transactions and personal 
+              information. We employ industry-leading encryption and multi-factor 
+              authentication to ensure that your data is protected. Additionally, we regularly 
+              update our security measures to stay ahead of emerging threats. 
+              You can bank with confidence knowing that we have robust 
+              security systems in place.
+            </p>
+          </div>
         </div>
+        
         <div id="Gradient" class="bg-gradient-to-t from-gray10 scale-105 left-0 bottom-0 absolute w-full h-[20%]"></div>
       </div>
       <div id="FAQ" class="flex justify-center relative">
-        <div id="btn" class="w-40 h-12 flex items-center justify-center p-1 border border-gray15 bg-gray11 text-white rounded-full">
+        <div id="btn" class="py-3 px-4 flex items-center justify-center p-1 border border-gray15 bg-gray11 text-white rounded-full laptop:py-3 laptop:px-5">
           <a href="">Load All FAQ</a>
           <img src="img/icons/arrow-down.svg" alt="arrow-down" class="ml-3">
         </div>
       </div>
     </section>
 
-    <section id="Our Testimonials" class="h-auto mt-20 px-5">
+    <section id="Our Testimonials" class="h-auto mt-20">
       <div id="Our Block">
-        <div id="Our Header">
-          <div id="Header Text" class="flex justify-center mb-4">
-            <h2 class="text-white text-center font-medium text-3xl mr-1">Our</h2>
-            <span class="text-green60 text-center font-medium text-3xl">Testimonials</span>
+        <div id="Our Header" class="flex flex-col items-center relative laptop:flex-row laptop:items-start laptop:justify-between">
+          <div id="Header" class="laptop:flex laptop:flex-col">
+            <div id="Header Text" class="flex justify-center mb-4 laptop:justify-start">
+              <h2 class="text-white font-medium text-3xl mr-1 laptop:text-4xl">Our</h2>
+              <span class="text-green60 font-medium text-3xl laptop:text-4xl">Testimonials</span>
+            </div>
+            <p class="text-gray70 text-base font-light text-center min-w-min max-w-lg laptop:text-start desktop:min-w-full">
+              Discover how YourBank has transformed lives with innovative digital 
+              solutions and personalized customer service. See why our clients 
+              trust us for a secure and prosperous financial journey
+            </p>
           </div>
-          <p class="text-gray70 text-base font-light text-center">
-            Discover how YourBank has transformed lives with innovative digital 
-            solutions and personalized customer service. See why our clients 
-            trust us for a secure and prosperous financial journey
-          </p>
-          <div id="Button" class="px-8 mt-5">
-            <button class= "border border-gray15 p-3 flex justify-around items-center bg-gray11 rounded-full w-full h-16">
-              <a href="" class="bg-green60 h-10 w-full flex items-center justify-center rounded-full text-black font-normal">For Individuals</a>
-              <a href="" class="text-white h-10 w-full flex items-center justify-center font-medium">For Businesses</a>
+          
+          <div id="Button" class="mt-5 laptop:mt-0 laptop:absolute laptop:bottom-0 laptop:right-0">
+            <button class= "border border-gray15 flex justify-around items-center bg-gray11 rounded-full w-auto px-2 py-2 whitespace-nowrap">
+              <a href="" class="bg-green60 flex items-center justify-center rounded-full text-black font-normal px-3 py-2 laptop:px-5 laptop:py-3 desktop:px-6 desktop:py-4 ">For Individuals</a>
+              <a href="" class="text-white flex items-center justify-center font-medium px-3 py-2 laptop:px-5 laptop:py-3 desktop:px-6 desktop:py-4">For Businesses</a>
             </button>
           </div>
         </div>
@@ -593,71 +647,71 @@
       </div>
     </section>
 
-    <section id="Start Card" class="h-auto mt-20 px-5">
-      <div id="Card" class="p-7 flex flex-col relative justify-center items-center rounded-3xl border border-gray15 bg-gray11">
-        <img src="img/bg-img/bg-dots-fade-l.svg" class="absolute left-0 top-0 w-32" alt="dots">
-        <div id="Top" class="flex flex-col text-center mb-4">
-          <h2 class="text-white text-3xl">Start your financial journey with</h2>
-          <span class="text-green60 text-3xl">YourBank today!</span>
+    <section id="Start Card" class="flex h-[35rem] mt-20 justify-center">
+      <div id="Card" class="max-h-96 p-7 flex flex-col relative max-w-sm justify-center items-center rounded-3xl border border-gray15 bg-gray11 laptop:max-w-full laptop:flex-row laptop:items-center laptop:justify-between laptop:p-20">
+        <img src="img/bg-img/bg-dots-fade-l.svg" class="absolute left-0 top-0 w-[10rem] laptop:w-[15rem] desktop:w-[18rem]" alt="dots">
+        <div id="Head" class="laptop:flex laptop:flex-col laptop:max-w-5xl">
+          <div id="Top" class="flex flex-col text-center mb-4 laptop:text-start">
+            <h2 class="text-white text-3xl laptop:text-4xl">Start your financial journey with</h2>
+            <span class="text-green60 text-3xl laptop:text-4xl">YourBank today!</span>
+          </div>
+          <p class="mb-6 text-center text-gray70 laptop:text-start laptop:mb-0:">
+            Lorem ipsum dolor sit amet consectetur. Blandit odio semper 
+            risus pellentesque elit. Pellentesque eget ut imperdiet nulla 
+            penatibus. Nascetur viverra arcu sed amet cursus purus.
+          </p>
         </div>
-        <p class="mb-6 text-center text-gray70">
-          Lorem ipsum dolor sit amet consectetur. Blandit odio semper 
-          risus pellentesque elit. Pellentesque eget ut imperdiet nulla 
-          penatibus. Nascetur viverra arcu sed amet cursus purus.
-        </p>
-        <a id="btn" href="#" class="py-4 px-6 w-40 whitespace-nowrap rounded-full bg-green60">Open Account</a>
+        <a id="btn" href="#" class="py-4 px-6 w-40 whitespace-nowrap rounded-full bg-green60 laptop:ml-5">Open Account</a>
       </div>
     </section>
 
-    <footer class="h-[250rem] mt-20 px-5 bg-gray11 pt-12 pb-8">
-      <div id="Footer Nav" class="flex flex-col justify-center items-center">
-        <img src="img/logo/Logo-mobile.svg" class="w-32 mb-8" alt="Logo Bank">
-        <ul class="flex flex-row w-[300px] text-gray-200 text-sm justify-around">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Security</a></li>
-        </ul>
-      </div>
-      <div id="gray-space" class="h-[1px] bg-gray15 my-8"></div>
-      <div id="Contacts" class="flex flex-wrap whitespace-nowrap justify-center text-xs text-gray-100">
-        <div class="flex items-center mr-4">
-          <img src="img/icons/email.svg" alt="email-ico">
-          <p class="ml-2">hello@skillbirdge.com</p>
-        </div>
-        <div class="flex items-center">
-          <img src="img/icons/phone.svg" alt="phone-ico">
-          <p class="ml-2">+91 91813 23 2309</p>
-        </div>
-        <div class="flex items-center mt-3">
-          <img src="img/icons/geo-location.svg" alt="geoloc-ico">
-          <p class="ml-2">Somewhere in the World</p>
-        </div>
-      </div>
-      <div id="gray-space" class="h-[1px] bg-gray15 mt-8 mb-12"></div>
-      <div id="Down" class="flex flex-col pb-7 items-center font-light relative rounded-xl border border-gray15 bg-gray10 text-gray75">
-        <div id="Contact Buttons" class="flex translate-y-[-1.5rem]">
-          <a href="#" class="rounded-full p-3 bg-green60 mr-2">
-            <img src="img/icons/facebook.svg" alt="facebook-ico">
-          </a>
-          <a href="#" class="rounded-full p-3 bg-green60 mr-2">
-            <img src="img/icons/twitter.svg" alt="twitter-ico">
-          </a>
-          <a href="#" class="rounded-full p-3 bg-green60">
-            <img src="img/icons/linkedin.svg" alt="linkedin-ico">
-          </a>
-        </div>
-        <p class="mb-4">YourBank All Rights Reserved</p>
-          <div class="flex">
-            <p>Privacy Policy</p>
-            <div id="white-space" class="w-[1px] bg-gray-200 mx-3"></div>
-            <p>Terms of Service</p>
-          </div>
-      </div>
-    </footer>
-
-    <div class="2xl"></div>
 </main>
+<footer class="h-auto bg-gray11 pt-12 pb-8 px-4 ipad:px-8 laptop:px-20">
+  <div id="Footer Nav" class="flex flex-col justify-center items-center">
+    <img src="img/logo/Logo-mobile.svg" class="w-32 mb-8" alt="Logo Bank">
+    <ul class="flex flex-row w-[300px] text-gray-200 text-sm justify-around desktop:text-base">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Security</a></li>
+    </ul>
+  </div>
+  <div id="gray-space" class="h-[1px] bg-gray15 my-8"></div>
+  <div id="Contacts" class="flex flex-wrap max-w-md mx-auto whitespace-nowrap justify-center text-xs text-gray-100 laptop:max-w-none desktop:text-sm">
+    <div class="flex items-center mr-4">
+      <img src="img/icons/email.svg" alt="email-ico">
+      <p class="ml-2">hello@skillbirdge.com</p>
+    </div>
+    <div class="flex items-center">
+      <img src="img/icons/phone.svg" alt="phone-ico">
+      <p class="ml-2">+91 91813 23 2309</p>
+    </div>
+    <div class="flex items-center mt-3 laptop:mt-0 laptop:ml-4">
+      <img src="img/icons/geo-location.svg" alt="geoloc-ico">
+      <p class="ml-2">Somewhere in the World</p>
+    </div>
+  </div>
+  <div id="gray-space" class="h-[1px] bg-gray15 mt-8 mb-12"></div>
+  <div id="Down" class="flex flex-col pb-7 items-center font-light relative rounded-xl border border-gray15 bg-gray10 text-gray75 laptop:flex-row laptop:justify-between laptop:items-center laptop:py-6 laptop:px-4 laptop:rounded-full">
+    <div id="Contact Buttons" class="flex translate-y-[-1.5rem] laptop:translate-y-0 laptop:ml-20 desktop:ml-0">
+      <a href="#" class="rounded-full p-3 bg-green60 mr-2">
+        <img src="img/icons/facebook.svg" alt="facebook-ico">
+      </a>
+      <a href="#" class="rounded-full p-3 bg-green60 mr-2">
+        <img src="img/icons/twitter.svg" alt="twitter-ico">
+      </a>
+      <a href="#" class="rounded-full p-3 bg-green60">
+        <img src="img/icons/linkedin.svg" alt="linkedin-ico">
+      </a>
+    </div>
+    <p class="mb-4 laptop:mb-0 desktop:ml-20">YourBank All Rights Reserved</p>
+      <div class="flex">
+        <p>Privacy Policy</p>
+        <div id="white-space" class="w-[1px] bg-gray-200 mx-3"></div>
+        <p>Terms of Service</p>
+      </div>
+  </div>
+</footer>
 
 <script>
   let isDragging = false;
